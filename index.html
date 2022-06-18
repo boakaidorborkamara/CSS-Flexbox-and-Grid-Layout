@@ -12,8 +12,14 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         
+        h1 {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        
         p {
             font-size: 15px;
+            line-height: 24px;
         }
         
         button {
@@ -22,6 +28,7 @@
             border: none;
             outline: none;
         }
+        /* header styling starts  */
         
         header {
             height: 20%;
@@ -29,22 +36,34 @@
             background-color: hsl(179, 100%, 13%);
             text-align: center;
             color: white;
-            margin-bottom: 25px;
+            margin-bottom: 15px;
         }
         
         header a {
             color: white;
         }
+        /* main section styling starts  */
         
         main {
             display: flex;
             flex-direction: row;
             /* flex-wrap: wrap; */
-            /* justify-content: center; */
-            width: 80%;
+            width: 60%;
             margin: auto;
-            background-color: red;
         }
+        
+        main p {
+            width: 80%;
+        }
+        
+        main div {
+            position: relative;
+        }
+        
+        main div:nth-child(4) {
+            margin-top: 100px;
+        }
+        /* cards styling starts  */
         
         #sundans {
             background-color: hsl(31, 77%, 52%);
@@ -56,15 +75,22 @@
         
         #suvs {
             background-color: hsl(184, 100%, 22%);
-            /* width: 20%; */
+            height: 60vh;
             padding: 50px;
         }
         
         #luxury {
             background-color: hsl(179, 100%, 13%);
-            /* width: 20%; */
+            height: 60vh;
             padding: 50px;
             border-radius: 0px 20px 20px 0px;
+        }
+        /* small screens  */
+        
+        @media (425) {
+            main {
+                background-color: red;
+            }
         }
     </style>
 </head>
@@ -86,20 +112,20 @@
         </div>
         <div id="suvs">
             <div class="icon-box">
-                <img src="./images/icon-sedans.svg" alt="sundans logo">
+                <img src="./images/icon-suvs.svg" alt="suv logo">
             </div>
-            <h1>SEDANS</h1>
-            <p>Choose a Sundans for its affordability excellent fuel economy. Ideal for crusing or on your right road trip.</p>
+            <h1>SUVS</h1>
+            <p>Take and SUV for its spacious interior, power, and versality. Perfect for your next family vacation and off-road adventure.</p>
             <div>
                 <button>Learn More</button>
             </div>
         </div>
         <div id="luxury">
             <div class="icon-box">
-                <img src="./images/icon-sedans.svg" alt="sundans logo">
+                <img src="./images/icon-luxury.svg" alt="luxury logo">
             </div>
-            <h1>SEDANS</h1>
-            <p>Choose a Sundans for its affordability excellent fuel economy. Ideal for crusing or on your right road trip.</p>
+            <h1>LUXURY</h1>
+            <p>Cruise in the best car brand without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrival in style.</p>
             <div>
                 <button>Learn More</button>
             </div>
