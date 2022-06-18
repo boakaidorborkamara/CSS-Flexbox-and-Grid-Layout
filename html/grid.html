@@ -21,18 +21,20 @@
         main {
             width: 70%;
             margin: 0 auto;
-            background-color: olivedrab;
+            /* background-color: rgb(77, 77, 77); */
             display: grid;
         }
         
         #first-container {
             display: grid;
             grid-template-columns: 2fr 1fr;
+            row-gap: 15px;
+            column-gap: 15px;
+            margin-bottom: 15px;
         }
         
         #first-container div {
             padding: 150px;
-            border: 1px solid yellow;
         }
         
         #first-container div:nth-child(1) {
@@ -40,7 +42,35 @@
         }
         
         #first-container div:nth-child(2) {
-            background-color: yellow;
+            background-color: orange;
+        }
+        /* second container styling starts  */
+        
+        #second-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            column-gap: 15px;
+        }
+        
+        #second-container div:nth-child(2) {
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 10px;
+        }
+        
+        #second-container div:nth-child(1) {
+            background-color: green;
+        }
+        
+        #second-container div:nth-child(2) {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 15px;
+        }
+        
+        #second-container div:nth-child(2) div {
+            background-color: blue;
+            padding: 80px;
         }
     </style>
 </head>
@@ -54,9 +84,9 @@
             <div>1</div>
             <div>2</div>
         </div>
-        <div>
-            <div>3</div>
-            <div>
+        <div id="second-container">
+            <div class="item">3</div>
+            <div class="item">
                 <div>4</div>
                 <div>5</div>
             </div>
